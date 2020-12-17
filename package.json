@@ -1,0 +1,19 @@
+{
+  "name": "matheograil_3_17122020",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS.",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheograil/MatheoGrail_3_17122020.git"
+  },
+  "author": "Mathéo Grail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheograil/MatheoGrail_3_17122020/issues"
+  },
+  "homepage": "https://github.com/matheograil/MatheoGrail_3_17122020#readme"
+}
