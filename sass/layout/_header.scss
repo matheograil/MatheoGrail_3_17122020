@@ -1,11 +1,11 @@
 header {
     text-align: center;
-    height: $header-height;
-    line-height: $header-height;
-    box-shadow: $header-bottom-shadow;
+    height: 63px;
+    line-height: 63px;
+    box-shadow: 0 2px 4px -1px #808080;
     position: relative;
     z-index: 1;
-
+ 
     .header__img {
         vertical-align: middle;
     }

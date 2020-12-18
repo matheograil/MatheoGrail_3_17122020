@@ -1,12 +1,13 @@
 .overview {
     text-align: center;
     background-color: $overview-background-color;
+    padding-bottom: 50px;
 
     .overview__title {
-        padding: $overview__title-padding;
+        padding: 40px 30px 5px 30px;
     }
 
     .overview__description {
-        padding: $overview__description-padding;
+        padding: 5px 30px 30px 30px;
     }
 }
