@@ -1,0 +1,12 @@
+header {
+    text-align: center;
+    height: $header-height;
+    line-height: $header-height;
+    box-shadow: $header-bottom-shadow;
+    position: relative;
+    z-index: 1;
+
+    .header__img {
+        vertical-align: middle;
+    }
+}

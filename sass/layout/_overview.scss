@@ -1,0 +1,12 @@
+.overview {
+    text-align: center;
+    background-color: $overview-background-color;
+
+    .overview__title {
+        padding: $overview__title-padding;
+    }
+
+    .overview__description {
+        padding: $overview__description-padding;
+    }
+}
