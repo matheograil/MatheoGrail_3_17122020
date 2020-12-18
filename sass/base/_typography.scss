@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-.roboto {
+.font-roboto {
     font-family: 'Roboto', sans-serif;
+
+    &--thin {
+        font-weight: 100;
+    }
 }
 
-.shrikhand {
+.font-shrikhand {
     font-family: 'Shrikhand', sans-serif;
 }
 
-.bold {
+.text-bold {
     font-weight: bold;
+}
+
+.text-white {
+    color: white;
 }
