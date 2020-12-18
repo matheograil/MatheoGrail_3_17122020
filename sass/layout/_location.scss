@@ -1,0 +1,8 @@
+.location {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    height: $location-height;
+    line-height: $location-height;
+    background-color: $location-background-color;
+}
