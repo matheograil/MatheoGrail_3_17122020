@@ -1,6 +1,6 @@
 .overview {
     text-align: center;
-    background-color: $overview-background-color;
+    background-color: $quinary-color;
     padding-bottom: 50px;
 
     .overview__title {
@@ -8,6 +8,7 @@
     }
 
     .overview__description {
+        @include font-thin;
         padding: 5px 30px 30px 30px;
     }
 }
