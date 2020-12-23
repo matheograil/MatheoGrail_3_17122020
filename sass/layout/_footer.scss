@@ -1,0 +1,22 @@
+footer {
+    background-color: $senary-color;
+
+    .footer__block {
+        max-width: 1350px;
+        padding: 30px 0px 30px 0;
+        margin: auto;
+
+        .footer__img {
+            width: 8%;
+        }
+
+        .footer__items {
+            display: flex;
+            justify-content: space-between;
+
+            .footer__item {
+                @include text-white;
+            }
+        }
+    }
+}
