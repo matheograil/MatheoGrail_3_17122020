@@ -44,12 +44,15 @@
 $breakpoint-tablet: 900px;
 @media screen and (max-width: $breakpoint-tablet) {
     .howitworks {
+
         .howitworks__title {
             padding: 10px 20px 5px 20px;
         }
+
         .howitworks__items {
             margin-left: 10px;
             flex-wrap: wrap;
+            
             .howitworks__item {
                 margin-bottom: 10px;
                 margin-top: 10px;
