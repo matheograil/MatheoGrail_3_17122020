@@ -1,10 +1,10 @@
 .howitworks {
     max-width: 1350px;
-    padding-top: 30px;
+    padding: 30px 0px 30px 0;
     margin: auto;
     
     .howitworks__title {
-        padding: 20px;
+       padding: 20px;
     }
 
     .howitworks__items {
@@ -36,6 +36,23 @@
                 text-align: center;
                 line-height: 73px;
                 @include text-bold;
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 900px;
+@media screen and (max-width: $breakpoint-tablet) {
+    .howitworks {
+        .howitworks__title {
+            padding: 10px 20px 5px 20px;
+        }
+        .howitworks__items {
+            margin-left: 10px;
+            flex-wrap: wrap;
+            .howitworks__item {
+                margin-bottom: 10px;
+                margin-top: 10px;
             }
         }
     }
