@@ -3,11 +3,11 @@
 
     .restaurants__block {
         max-width: 1350px;
-        padding: 30px 0px 30px 0;
+        padding: 40px 0 40px 0;
         margin: auto;
     
         .restaurants__title {
-            padding: 20px;
+            margin: 0 20px 10px 20px;
         }
 
         .restaurants__items {
@@ -46,8 +46,7 @@
     }
 }
 
-$breakpoint-tablet: 900px;
-@media screen and (max-width: $breakpoint-tablet) {
+@media screen and (max-width: $breakpoint-howitworks-restaurants) {
     #restaurants {
 
         .restaurants__block {
@@ -57,7 +56,6 @@ $breakpoint-tablet: 900px;
 
                 .restaurants__item {
                     margin-bottom: 10px;
-                    margin-top: 10px;
                 }
             }
         }

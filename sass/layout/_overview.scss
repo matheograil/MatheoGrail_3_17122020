@@ -1,14 +1,14 @@
 .overview {
     text-align: center;
     background-color: $quinary-color;
-    padding-bottom: 50px;
+    padding: 40px 20px 50px 20px;
 
     .overview__title {
-        padding: 40px 30px 5px 30px;
+        margin-bottom: 10px;
     }
 
     .overview__description {
         @include font-thin;
-        padding: 5px 30px 30px 30px;
+        margin-bottom: 30px;
     }
 }
