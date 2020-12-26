@@ -7,11 +7,3 @@ body {
 @mixin font-thin {
     font-weight: 100;
 }
-
-@mixin text-bold {
-    font-weight: bold;
-}
-
-@mixin text-white {
-    color: white;
-}
