@@ -7,15 +7,14 @@
     cursor: pointer;
     @include text-white;
     box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 300ms;
 
     &--center {
         margin: 0 auto;
     }
 
     &:hover {
-        transform: scale(1.15);
+        transition: box-shadow 300ms ease, opacity 300ms ease;
+        box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.5);
+        opacity: 0.9;
     }
 }
