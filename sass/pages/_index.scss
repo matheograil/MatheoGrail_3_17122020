@@ -32,7 +32,7 @@
     .howitworks__items {
         display: flex;
 
-        @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+        @media screen and (max-width: $breakpoint-alpha) {
             margin-left: 15px;
             flex-wrap: wrap;
         }
@@ -46,7 +46,7 @@
             box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
             position: relative;
 
-            @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+            @media screen and (max-width: $breakpoint-alpha) {
                 margin-bottom: 10px;
             }
 
@@ -92,7 +92,7 @@
             background-color: $quinary-color;
             display: flex;
 
-            @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+            @media screen and (max-width: $breakpoint-alpha) {
                 flex-wrap: wrap;
             }
 
@@ -104,7 +104,7 @@
                 margin: 20px;
                 box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
 
-                @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+                @media screen and (max-width: $breakpoint-alpha) {
                     margin-bottom: 10px;
                 }
 
