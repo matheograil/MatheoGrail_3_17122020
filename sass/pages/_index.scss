@@ -45,6 +45,7 @@
             margin: 20px;
             box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
             position: relative;
+            transition: background-color 300ms ease;
 
             @media screen and (max-width: $breakpoint-alpha) {
                 margin-bottom: 10px;
@@ -71,6 +72,10 @@
                 .fas {
                     color: $septenary-color;
                 }
+            }
+
+            &:hover {
+                background-color: lighten($primary-color, 30%);
             }
         }
     }
