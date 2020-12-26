@@ -15,22 +15,14 @@ footer {
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width: $breakpoint-beta) {
+                flex-wrap: wrap;
+            }
+
             .footer__item {
                 @include text-white;
-            }
-        }
-    }
-}
 
-@media screen and (max-width: $breakpoint-footer) {
-    footer {
-
-        .footer__block {
-            
-            .footer__items {
-                flex-wrap: wrap;
-
-                .footer__item {
+                @media screen and (max-width: $breakpoint-beta) {
                     margin-top: 10px;
                     width: 100%;
                 }
