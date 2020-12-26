@@ -20,19 +20,19 @@ footer {
             }
         }
     }
-}
 
-@media screen and (max-width: $breakpoint-footer) {
-    footer {
-
-        .footer__block {
-            
-            .footer__items {
-                flex-wrap: wrap;
-
-                .footer__item {
-                    margin-top: 10px;
-                    width: 100%;
+    @media screen and (max-width: $breakpoint-footer) {
+        footer {
+    
+            .footer__block {
+                
+                .footer__items {
+                    flex-wrap: wrap;
+    
+                    .footer__item {
+                        margin-top: 10px;
+                        width: 100%;
+                    }
                 }
             }
         }

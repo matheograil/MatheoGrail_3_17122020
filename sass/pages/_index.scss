@@ -1,0 +1,133 @@
+.location {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: $quaternary-color;
+}
+
+.overview {
+    text-align: center;
+    background-color: $quinary-color;
+    padding: 40px 20px 50px 20px;
+
+    .overview__title {
+        margin-bottom: 10px;
+    }
+
+    .overview__description {
+        @include font-thin;
+        margin-bottom: 30px;
+    }
+}
+
+.howitworks {
+    max-width: 1350px;
+    padding: 40px 0 40px 0;
+    margin: auto;
+    
+    .howitworks__title {
+        margin: 0 20px 10px 20px;
+    }
+
+    .howitworks__items {
+        display: flex;
+
+        @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+            margin-left: 15px;
+            flex-wrap: wrap;
+        }
+
+        .howitworks__item {
+            width: 100%;
+            height: 75px;
+            background-color: $quinary-color;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+            position: relative;
+
+            @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+                margin-bottom: 10px;
+            }
+
+            .howitworks__circle {
+                position: absolute;
+                border-radius: 50%;
+	            background-color: $primary-color;
+	            height: 25px;
+  	            width: 25px;
+	            text-align: center;
+                line-height: 25px;
+                left: -15px;
+                bottom: 25px;
+                @include text-white;
+            }
+
+            .howitworks__description {
+                text-align: center;
+                line-height: 75px;
+                @include text-bold;
+
+                .fas {
+                    color: $septenary-color;
+                }
+            }
+        }
+    }
+}
+
+#restaurants {
+    background-color: $quinary-color;
+
+    .restaurants__block {
+        max-width: 1350px;
+        padding: 40px 0 40px 0;
+        margin: auto;
+    
+        .restaurants__title {
+            margin: 0 20px 10px 20px;
+        }
+
+        .restaurants__items {
+            background-color: $quinary-color;
+            display: flex;
+
+            @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+                flex-wrap: wrap;
+            }
+
+            .restaurants__item {
+                background-color: white;
+                border-radius: 20px;
+                height: 250px;
+                width: 100%;
+                margin: 20px;
+                box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+
+                @media screen and (max-width: $breakpoint-howitworks-restaurants) {
+                    margin-bottom: 10px;
+                }
+
+                .restaurants__img {
+                    width: 100%;
+                    height: 180px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    object-fit: cover;
+                }
+
+                .restaurants__description {
+                    margin: 10px 20px 10px 20px;
+
+                    .restaurants__name {
+                        @include text-bold;
+                    }
+
+                    .restaurants__location {
+                        @include font-thin;
+                    }
+                }
+            }
+        }
+    }
+}
