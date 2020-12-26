@@ -20,7 +20,7 @@ footer {
             }
 
             .footer__item {
-                @include text-white;
+                color: white;
 
                 @media screen and (max-width: $breakpoint-beta) {
                     margin-top: 10px;
