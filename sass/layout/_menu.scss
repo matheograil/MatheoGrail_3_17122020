@@ -1,0 +1,57 @@
+.menu {
+    margin-top: -50px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    background-color: $quinary-color;
+
+    .menu__block {
+        max-width: 1350px;
+        padding: 40px 0 40px 0;
+        margin: auto;
+
+        .menu__title {
+            margin: -10px 20px 10px 20px;
+            @include font-shrikhand;
+
+            .far {
+                float: right;
+            }
+        }
+
+        .menu__description {
+            padding: 10px 5px 10px 5px;
+        
+            .menu__name {
+                margin: 10px 20px 10px 20px;
+                text-transform: uppercase;
+                @include font-thin;
+            }
+
+            .menu__items {
+                display: flex;
+
+                @media screen and (max-width: $breakpoint-alpha) {
+                    flex-wrap: wrap;
+                }
+
+                .menu__item {
+                    padding: 15px 10px 15px 10px;
+                    border-radius: 15px;
+                    margin: 20px;
+                    background-color: white;
+                    box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+                    width: 100%;
+
+                    @media screen and (max-width: $breakpoint-alpha) {
+                        margin-bottom: 10px;
+                    }
+
+                    .menu__price {
+                        float: right;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
