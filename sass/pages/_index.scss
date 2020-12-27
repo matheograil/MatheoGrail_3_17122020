@@ -148,6 +148,10 @@
 
                     .restaurants__name {
                         font-weight: bold;
+
+                        .far {
+                            float: right;
+                        }
                     }
 
                     .restaurants__location {
