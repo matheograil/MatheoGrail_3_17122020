@@ -1,12 +1,12 @@
 .menu {
-    margin-top: -50px;
+    margin-top: -40px;
     border-radius: 40px 40px 0 0;
     position: relative;
     background-color: $quinary-color;
 
     .menu__block {
         max-width: 1350px;
-        padding: 40px 0 40px 0;
+        padding: 40px 0 60px 0;
         margin: auto;
 
         .menu__title {
@@ -19,12 +19,21 @@
         }
 
         .menu__description {
-            padding: 10px 5px 10px 5px;
+            margin-bottom: 40px;
         
             .menu__name {
-                margin: 10px 20px 10px 20px;
+                margin: 30px 20px 10px 20px;
                 text-transform: uppercase;
                 @include font-thin;
+            }
+
+            .menu__underline {
+                position: relative;
+                right: -20px;
+                top: -5px;
+                background-color: $octonary-color;
+                height: 3px;
+                width: 40px;
             }
 
             .menu__items {
@@ -37,13 +46,17 @@
                 .menu__item {
                     padding: 15px 10px 15px 10px;
                     border-radius: 15px;
-                    margin: 20px;
+                    margin: 15px 20px 0 20px;
                     background-color: white;
                     box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
                     width: 100%;
 
-                    @media screen and (max-width: $breakpoint-alpha) {
-                        margin-bottom: 10px;
+                    .menu__dish {
+                        font-weight: bold;
+                    }
+
+                    .menu__subtlety {    
+                        font-size: 13px;
                     }
 
                     .menu__price {
