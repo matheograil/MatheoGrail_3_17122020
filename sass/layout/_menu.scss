@@ -1,5 +1,5 @@
 .menu {
-    margin-top: -50px;
+    margin-top: -40px;
     border-radius: 40px 40px 0 0;
     position: relative;
     background-color: $quinary-color;
@@ -51,16 +51,11 @@
                     box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
                     width: 100%;
 
-                    @media screen and (max-width: $breakpoint-alpha) {
-                        margin-bottom: 0;
-                    }
-
                     .menu__dish {
                         font-weight: bold;
                     }
 
-                    .menu__subtlety {
-                        
+                    .menu__subtlety {    
                         font-size: 13px;
                     }
 
