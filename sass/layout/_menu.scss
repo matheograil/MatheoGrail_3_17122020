@@ -15,6 +15,11 @@
 
             .far {
                 float: right;
+                cursor: pointer;
+
+                &:hover {
+                    animation: keyframes-heart 2000ms forwards;
+                }
             }
         }
 
@@ -50,6 +55,28 @@
                     background-color: white;
                     box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
                     width: 100%;
+                    animation: menu__items 1000ms forwards;
+                    opacity: 0;
+
+                    @for $i from 1 through 4 {
+                        &--#{$i} {
+                            animation-delay: 200ms*$i;
+                        }
+                    }
+
+                    @keyframes menu__items {
+                        from {
+                            opacity: 0;
+                            transform: translate(0, 20px);
+                        }
+                        90% {
+                            opacity: 1;
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translate(0, 0);
+                        }
+                    }
 
                     .menu__dish {
                         font-weight: bold;
