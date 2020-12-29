@@ -1,0 +1,14 @@
+@keyframes keyframes-heart {
+    from {
+        opacity: 0;
+        color: $primary-color;
+    }
+    10% {
+        font-weight: 600;
+    }
+    to {
+        font-weight: 600;
+        opacity: 1;
+        color: $primary-color;
+    }
+}

@@ -26,7 +26,7 @@
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        background: linear-gradient(163deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 73%);
+        background: linear-gradient($primary-gradient);
         animation: loader__spinner 1000ms linear 3;
 
         @keyframes loader__spinner {

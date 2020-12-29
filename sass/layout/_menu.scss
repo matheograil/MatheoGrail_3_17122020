@@ -15,6 +15,11 @@
 
             .far {
                 float: right;
+                cursor: pointer;
+
+                &:hover {
+                    animation: keyframes-heart 2000ms forwards;
+                }
             }
         }
 
