@@ -12,9 +12,10 @@
         .menu__title {
             margin: -10px 20px 10px 20px;
             @include font-shrikhand;
+            display: flex;
+            justify-content: space-between;
 
             .far {
-                float: right;
                 cursor: pointer;
 
                 &:hover {
@@ -49,14 +50,16 @@
                 }
 
                 .menu__item {
-                    padding: 15px 10px 15px 10px;
                     border-radius: 15px;
                     margin: 15px 20px 0 20px;
                     background-color: white;
                     box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
                     width: 100%;
+                    height: 70px;
                     animation: menu__items 1000ms forwards;
                     opacity: 0;
+                    display: flex;
+                    justify-content: space-between;
 
                     @for $i from 1 through 4 {
                         &--#{$i} {
@@ -78,17 +81,62 @@
                         }
                     }
 
-                    .menu__dish {
-                        font-weight: bold;
+                    .menu__static {
+                        width: 100%;
+                        display: table;
+                        table-layout: fixed;
+                        padding: 15px 10px 15px 10px;
+
+                        .menu__dish {
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+
+                        .menu__subtlety {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            font-size: 13px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .menu__price {
+                                font-weight: bold;
+                            }
+                        }
                     }
 
-                    .menu__subtlety {    
-                        font-size: 13px;
+                    .menu__animated {
+                        display: none;
+
+                        .fas {
+                            line-height: 70px;
+                            color: white;
+                        }
                     }
 
-                    .menu__price {
-                        float: right;
-                        font-weight: bold;
+                    &:hover .menu__animated {
+                        display: block;
+                        animation: menu__animated 300ms forwards;
+                        transform-origin: right;
+                        background-color: $tertiary-color;
+                        width: 60px;
+                        text-align: center;
+                        line-height: 70px;
+                    }
+
+                    @keyframes menu__animated {
+                        from {
+                            transform: scaleX(0);
+                            border-top-right-radius: 30px;
+                            border-bottom-right-radius: 30px;
+                        }
+                        to {
+                            border-top-right-radius: 15px;
+                            border-bottom-right-radius: 15px;
+                            transform: scaleX(1);
+                        }
                     }
                 }
             }
