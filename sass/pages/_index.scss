@@ -148,10 +148,10 @@
 
                     .restaurants__name {
                         font-weight: bold;
+                        display: flex;
+                        justify-content: space-between;
 
                         .far {
-                            float: right;
-
                             &:hover {
                                 animation: keyframes-heart 2000ms forwards;
                             }
