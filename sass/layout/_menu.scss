@@ -1,139 +1,139 @@
 .menu {
-    margin-top: -40px;
-    border-radius: 40px 40px 0 0;
-    position: relative;
-    background-color: $quinary-color;
+	margin-top: -40px;
+	border-radius: 40px 40px 0 0;
+	position: relative;
+	background-color: $quinary-color;
 
-    .menu__block {
-        max-width: 1350px;
-        padding: 40px 0 60px 0;
-        margin: auto;
+	.menu__block {
+		max-width: 1350px;
+		padding: 40px 0 60px 0;
+		margin: auto;
 
-        .menu__title {
-            margin: -10px 20px 10px 20px;
-            @include font-shrikhand;
-            display: flex;
-            justify-content: space-between;
+		.menu__title {
+			margin: -10px 20px 10px 20px;
+			@include font-shrikhand;
+			display: flex;
+			justify-content: space-between;
 
-            .far {
-                cursor: pointer;
+			.far {
+				cursor: pointer;
 
-                &:hover {
-                    animation: keyframes-heart 2000ms forwards;
-                }
-            }
-        }
+				&:hover {
+					animation: keyframes-heart 2000ms forwards;
+				}
+			}
+		}
 
-        .menu__description {
-            margin-bottom: 40px;
-        
-            .menu__name {
-                margin: 30px 20px 10px 20px;
-                text-transform: uppercase;
-                @include font-thin;
-            }
+		.menu__description {
+			margin-bottom: 40px;
+		
+			.menu__name {
+				margin: 30px 20px 10px 20px;
+				text-transform: uppercase;
+				@include font-thin;
+			}
 
-            .menu__underline {
-                position: relative;
-                right: -20px;
-                top: -5px;
-                background-color: $octonary-color;
-                height: 3px;
-                width: 40px;
-            }
+			.menu__underline {
+				position: relative;
+				right: -20px;
+				top: -5px;
+				background-color: $octonary-color;
+				height: 3px;
+				width: 40px;
+			}
 
-            .menu__items {
-                display: flex;
+			.menu__items {
+				display: flex;
 
-                @media screen and (max-width: $breakpoint-alpha) {
-                    flex-wrap: wrap;
-                }
+				@media screen and (max-width: $breakpoint-alpha) {
+					flex-wrap: wrap;
+				}
 
-                .menu__item {
-                    border-radius: 15px;
-                    margin: 15px 20px 0 20px;
-                    background-color: white;
-                    box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
-                    width: 100%;
-                    height: 70px;
-                    animation: menu__items 1000ms forwards;
-                    opacity: 0;
-                    display: flex;
-                    justify-content: space-between;
+				.menu__item {
+					border-radius: 15px;
+					margin: 15px 20px 0 20px;
+					background-color: white;
+					box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+					width: 100%;
+					height: 70px;
+					animation: menu__items 1000ms forwards;
+					opacity: 0;
+					display: flex;
+					justify-content: space-between;
 
-                    @for $i from 1 through 4 {
-                        &--#{$i} {
-                            animation-delay: 200ms*$i;
-                        }
-                    }
+					@for $i from 1 through 4 {
+						&--#{$i} {
+							animation-delay: 200ms*$i;
+						}
+					}
 
-                    @keyframes menu__items {
-                        from {
-                            opacity: 0;
-                            transform: translate(0, 20px);
-                        }
-                        90% {
-                            opacity: 1;
-                        }
-                        to {
-                            opacity: 1;
-                            transform: translate(0, 0);
-                        }
-                    }
+					@keyframes menu__items {
+						from {
+							opacity: 0;
+							transform: translate(0, 20px);
+						}
+						90% {
+							opacity: 1;
+						}
+						to {
+							opacity: 1;
+							transform: translate(0, 0);
+						}
+					}
 
-                    .menu__static {
-                        width: 100%;
-                        padding: 15px 10px 15px 10px;
+					.menu__static {
+						width: 100%;
+						padding: 15px 10px 15px 10px;
 
-                        .menu__dish {
-                            margin-bottom: 5px;
-                            font-weight: bold;
-                        }
+						.menu__dish {
+							margin-bottom: 5px;
+							font-weight: bold;
+						}
 
-                        .menu__subtlety {
-                            font-size: 13px;
-                            display: flex;
-                            justify-content: space-between;
+						.menu__subtlety {
+							font-size: 13px;
+							display: flex;
+							justify-content: space-between;
 
-                            .menu__price {
-                                font-weight: bold;
-                            }
-                        }
-                    }
+							.menu__price {
+								font-weight: bold;
+							}
+						}
+					}
 
-                    .menu__animated {
-                        display: none;
+					.menu__animated {
+						display: none;
 
-                        .fas {
-                            line-height: 70px;
-                            color: white;
-                        }
-                    }
+						.fas {
+							line-height: 70px;
+							color: white;
+						}
+					}
 
-                    &:hover .menu__animated {
-                        display: block;
-                        animation: menu__animated 300ms forwards;
-                        transform-origin: right;
-                        background-color: $tertiary-color;
-                        width: 60px;
-                        text-align: center;
-                        line-height: 70px;
-                    }
+					&:hover .menu__animated {
+						display: block;
+						animation: menu__animated 300ms forwards;
+						transform-origin: right;
+						background-color: $tertiary-color;
+						width: 60px;
+						text-align: center;
+						line-height: 70px;
+					}
 
-                    @keyframes menu__animated {
-                        from {
-                            transform: scaleX(0);
-                            border-top-right-radius: 30px;
-                            border-bottom-right-radius: 30px;
-                        }
-                        to {
-                            border-top-right-radius: 15px;
-                            border-bottom-right-radius: 15px;
-                            transform: scaleX(1);
-                        }
-                    }
-                }
-            }
-        }
-    }
+					@keyframes menu__animated {
+						from {
+							transform: scaleX(0);
+							border-top-right-radius: 30px;
+							border-bottom-right-radius: 30px;
+						}
+						to {
+							border-top-right-radius: 15px;
+							border-bottom-right-radius: 15px;
+							transform: scaleX(1);
+						}
+					}
+				}
+			}
+		}
+	}
 }

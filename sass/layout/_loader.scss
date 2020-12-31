@@ -1,41 +1,41 @@
 .loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: loader 3000ms forwards;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: loader 3000ms forwards;
 
-    @keyframes loader {
-        from {
-            z-index: 9999;
-            opacity: 1;
-        }
-        90% {
-            opacity: 1;
-        }
-        to {
-            z-index: -1;
-            opacity: 0;
-        }
-    }
+	@keyframes loader {
+		from {
+			z-index: 9999;
+			opacity: 1;
+		}
+		90% {
+			opacity: 1;
+		}
+		to {
+			z-index: -1;
+			opacity: 0;
+		}
+	}
 
-    .loader__spinner {
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        background: linear-gradient($primary-gradient);
-        animation: loader__spinner 1000ms linear 3;
+	.loader__spinner {
+		height: 70px;
+		width: 70px;
+		border-radius: 50%;
+		background: linear-gradient($primary-gradient);
+		animation: loader__spinner 1000ms linear 3;
 
-        @keyframes loader__spinner {
-            from {
-                transform: rotate(0);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    }
+		@keyframes loader__spinner {
+			from {
+				transform: rotate(0);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	}
 }
