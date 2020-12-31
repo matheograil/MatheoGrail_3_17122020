@@ -45,7 +45,7 @@
 			.menu__items {
 				display: flex;
 
-				@media screen and (max-width: $breakpoint-alpha) {
+				@media screen and (max-width: $breakpoint-charlie) {
 					flex-wrap: wrap;
 				}
 
