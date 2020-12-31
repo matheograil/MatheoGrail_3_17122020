@@ -83,20 +83,14 @@
 
                     .menu__static {
                         width: 100%;
-                        display: table;
-                        table-layout: fixed;
                         padding: 15px 10px 15px 10px;
 
                         .menu__dish {
                             margin-bottom: 5px;
                             font-weight: bold;
-                            white-space: nowrap;
-                            overflow: hidden;
                         }
 
                         .menu__subtlety {
-                            white-space: nowrap;
-                            overflow: hidden;
                             font-size: 13px;
                             display: flex;
                             justify-content: space-between;
