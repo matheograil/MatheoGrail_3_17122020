@@ -50,6 +50,7 @@
 				}
 
 				.menu__item {
+					overflow: hidden;
 					border-radius: 15px;
 					margin: 15px 20px 0 20px;
 					background-color: white;
@@ -102,7 +103,12 @@
 					}
 
 					.menu__animated {
-						display: none;
+						transform-origin: right;
+						background-color: $tertiary-color;
+						width: 60px;
+						text-align: center;
+						line-height: 70px;
+						animation: menu__animated--inactive 300ms forwards;
 
 						.fas {
 							line-height: 70px;
@@ -111,28 +117,32 @@
 					}
 
 					&:hover .menu__animated {
-						display: block;
 						animation: menu__animated 300ms forwards;
-						transform-origin: right;
-						background-color: $tertiary-color;
-						width: 60px;
-						text-align: center;
-						line-height: 70px;
 					}
 
 					&:hover .fas {
-						animation: menu__fas 500ms forwards;
+						animation: menu__fas 500ms;
+					}
+
+					@keyframes menu__animated--inactive {
+						from {
+							transform: scaleX(1);
+						}
+						50% {
+							transform: scaleX(0);
+						}
+						to {
+							position: absolute;
+							right: 0;
+							transform: scaleX(0);
+						}
 					}
 
 					@keyframes menu__animated {
 						from {
 							transform: scaleX(0);
-							border-top-right-radius: 30px;
-							border-bottom-right-radius: 30px;
 						}
 						to {
-							border-top-right-radius: 15px;
-							border-bottom-right-radius: 15px;
 							transform: scaleX(1);
 						}
 					}
