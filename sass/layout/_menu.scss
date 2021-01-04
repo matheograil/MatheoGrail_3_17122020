@@ -120,6 +120,10 @@
 						line-height: 70px;
 					}
 
+					&:hover .fas {
+						animation: menu__fas 500ms forwards;
+					}
+
 					@keyframes menu__animated {
 						from {
 							transform: scaleX(0);
@@ -130,6 +134,15 @@
 							border-top-right-radius: 15px;
 							border-bottom-right-radius: 15px;
 							transform: scaleX(1);
+						}
+					}
+
+					@keyframes menu__fas {
+						from {
+							transform: rotate(0);
+						}
+						to {
+							transform: rotate(-360deg);
 						}
 					}
 				}
