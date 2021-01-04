@@ -1,168 +1,170 @@
 .location {
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-    background-color: $quaternary-color;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	background-color: $quaternary-color;
 }
 
 .overview {
-    text-align: center;
-    background-color: $quinary-color;
-    padding: 40px 20px 50px 20px;
+	text-align: center;
+	background-color: $quinary-color;
+	padding: 40px 20px 50px 20px;
 
-    .overview__title {
-        margin-bottom: 10px;
-    }
+	.overview__title {
+		margin-bottom: 10px;
+	}
 
-    .overview__description {
-        @include font-thin;
-        margin-bottom: 30px;
-    }
+	.overview__description {
+		@include font-thin;
+		margin-bottom: 30px;
+	}
 }
 
 .howitworks {
-    max-width: 1350px;
-    padding: 40px 0 40px 0;
-    margin: auto;
-    
-    .howitworks__title {
-        margin: 0 20px 10px 20px;
-    }
+	max-width: 1350px;
+	padding: 40px 0 40px 0;
+	margin: auto;
+	
+	.howitworks__title {
+		margin: 0 20px 10px 20px;
+		font-size: 23px;
+	}
 
-    .howitworks__items {
-        display: flex;
+	.howitworks__items {
+		display: flex;
 
-        @media screen and (max-width: $breakpoint-alpha) {
-            margin-left: 15px;
-            flex-wrap: wrap;
-        }
+		@media screen and (max-width: $breakpoint-alpha) {
+			margin-left: 15px;
+			flex-wrap: wrap;
+		}
 
-        .howitworks__item {
-            width: 100%;
-            height: 75px;
-            background-color: $quinary-color;
-            border-radius: 20px;
-            margin: 20px;
-            box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
-            position: relative;
-            transition: background-color 300ms ease;
+		.howitworks__item {
+			width: 100%;
+			height: 75px;
+			background-color: $quinary-color;
+			border-radius: 20px;
+			margin: 20px;
+			box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+			position: relative;
+			transition: background-color 300ms ease;
 
-            @media screen and (max-width: $breakpoint-alpha) {
-                margin-bottom: 0;
-            }
+			@media screen and (max-width: $breakpoint-alpha) {
+				margin-bottom: 0;
+			}
 
-            .howitworks__circle {
-                position: absolute;
-                border-radius: 50%;
-                background-color: $primary-color;
-                color: white;
-	            height: 25px;
-  	            width: 25px;
-	            text-align: center;
-                line-height: 25px;
-                left: -15px;
-                bottom: 25px;
-                font-weight: bold;
-            }
+			.howitworks__circle {
+				position: absolute;
+				border-radius: 50%;
+				background-color: $primary-color;
+				color: white;
+				height: 25px;
+  				width: 25px;
+				text-align: center;
+				line-height: 25px;
+				left: -15px;
+				bottom: 25px;
+				font-weight: bold;
+			}
 
-            .howitworks__description {
-                text-align: center;
-                line-height: 75px;
-                font-weight: bold;
+			.howitworks__description {
+				text-align: center;
+				line-height: 75px;
+				font-weight: bold;
 
-                .fas {
-                    margin-right: 20px;
-                    color: $septenary-color;
-                }
-            }
+				.fas {
+					margin-right: 20px;
+					color: $septenary-color;
+				}
+			}
 
-            &:hover {
-                background-color: lighten($primary-color, 30%);
-                
-                .howitworks__description {
-    
-                    .fas {
-                        color: $primary-color;
-                    }
-                }
-            }
-        }
-    }
+			&:hover {
+				background-color: lighten($primary-color, 30%);
+				
+				.howitworks__description {
+	
+					.fas {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
 }
 
 #restaurants {
-    background-color: $quinary-color;
+	background-color: $quinary-color;
 
-    .restaurants__block {
-        max-width: 1350px;
-        padding: 40px 0 40px 0;
-        margin: auto;
-    
-        .restaurants__title {
-            margin: 0 20px 10px 20px;
-        }
+	.restaurants__block {
+		max-width: 1350px;
+		padding: 40px 0 40px 0;
+		margin: auto;
+	
+		.restaurants__title {
+			margin: 0 20px 10px 20px;
+			font-size: 23px;
+		}
 
-        .restaurants__items {
-            background-color: $quinary-color;
-            display: flex;
+		.restaurants__items {
+			background-color: $quinary-color;
+			display: flex;
 
-            @media screen and (max-width: $breakpoint-alpha) {
-                flex-wrap: wrap;
-            }
+			@media screen and (max-width: $breakpoint-alpha) {
+				flex-wrap: wrap;
+			}
 
-            .restaurants__item {
-                background-color: white;
-                border-radius: 20px;
-                height: 250px;
-                width: 100%;
-                margin: 20px;
-                box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+			.restaurants__item {
+				background-color: white;
+				border-radius: 20px;
+				height: 250px;
+				width: 100%;
+				margin: 20px;
+				box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
 
-                @media screen and (max-width: $breakpoint-alpha) {
-                    margin-bottom: 0;
-                }
+				@media screen and (max-width: $breakpoint-alpha) {
+					margin-bottom: 0;
+				}
 
-                .restaurants__img {
-                    width: 100%;
-                    height: 180px;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    object-fit: cover;
-                }
+				.restaurants__img {
+					width: 100%;
+					height: 180px;
+					border-top-left-radius: 20px;
+					border-top-right-radius: 20px;
+					object-fit: cover;
+				}
 
-                .restaurants__description {
-                    margin: 10px 20px 10px 20px;
-                    position: relative;
+				.restaurants__description {
+					margin: 10px 20px 10px 20px;
+					position: relative;
 
-                    .restaurants__badge {
-                        position: absolute;
-                        height: 30px;
-                        width: 80px;
-                        background-color: $octonary-color;
-                        color: $nonary-color;
-                        top: -180px;
-                        left: calc(100% - 75px);
-                        text-align: center;
-                        line-height: 30px;
-                    }
+					.restaurants__badge {
+						position: absolute;
+						height: 30px;
+						width: 80px;
+						background-color: $octonary-color;
+						color: $nonary-color;
+						top: -180px;
+						left: calc(100% - 75px);
+						text-align: center;
+						line-height: 30px;
+					}
 
-                    .restaurants__name {
-                        font-weight: bold;
-                        display: flex;
-                        justify-content: space-between;
+					.restaurants__name {
+						font-weight: bold;
+						display: flex;
+						justify-content: space-between;
 
-                        .far {
-                            &:hover {
-                                animation: keyframes-heart 2000ms forwards;
-                            }
-                        }
-                    }
+						.far {
+							&:hover {
+								animation: keyframes-heart 2000ms forwards;
+							}
+						}
+					}
 
-                    .restaurants__location {
-                        font-weight: 100;
-                    }
-                }
-            }
-        }
-    }
+					.restaurants__location {
+						font-weight: 100;
+					}
+				}
+			}
+		}
+	}
 }
