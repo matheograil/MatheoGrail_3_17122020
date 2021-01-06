@@ -89,20 +89,31 @@
 						.menu__dish {
 							margin-bottom: 5px;
 							font-weight: bold;
+							width: calc(100% - 20px);
+							white-space: nowrap;
+  							overflow: hidden;
+  							text-overflow: ellipsis;
 						}
 
 						.menu__subtlety {
-							font-size: 13px;
-							display: flex;
-							justify-content: space-between;
+							font-size: 13px;						
+							margin-bottom: 5px;
+							width: calc(100% - 50px);
+							white-space: nowrap;
+  							overflow: hidden;
+							text-overflow: ellipsis;
 
 							.menu__price {
+								position: absolute;
+								right: 10px;
 								font-weight: bold;
 							}
 						}
 					}
 
 					.menu__animated {
+						position: absolute;
+						right: 0;
 						transform-origin: right;
 						background-color: $tertiary-color;
 						width: 60px;
@@ -118,10 +129,22 @@
 
 					&:hover .menu__animated {
 						animation: menu__animated 300ms forwards;
+
+						.fas {
+							animation: menu__fas 500ms;
+						}
 					}
 
-					&:hover .fas {
-						animation: menu__fas 500ms;
+					&:hover .menu__dish {
+						width: calc(100% - 80px);
+					}
+
+					&:hover .menu__subtlety {
+						width: calc(100% - 110px);
+
+						.menu__price {
+							right: 70px;
+						}
 					}
 
 					@keyframes menu__animated--inactive {
