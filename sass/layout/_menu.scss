@@ -1,229 +1,229 @@
 .menu {
-	margin-top: -40px;
-	border-radius: 40px 40px 0 0;
-	position: relative;
-	background-color: $quinary-color;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    background-color: $quinary-color;
 
-	.menu__block {
-		max-width: 1350px;
-		padding: 40px 0 60px 0;
-		margin: auto;
+    .menu__block {
+        max-width: 1350px;
+        padding: 40px 0 60px 0;
+        margin: auto;
 
-		.menu__title {
-			margin: -10px 20px 10px 20px;
-			@include font-shrikhand;
-			display: flex;
-			justify-content: space-between;
+        .menu__title {
+            margin: -10px 20px 10px 20px;
+            @include font-shrikhand;
+            display: flex;
+            justify-content: space-between;
 
-			.far {
-				cursor: pointer;
+            .far {
+                cursor: pointer;
 
-				&:hover {
-					animation: keyframes-heart 2000ms forwards;
-				}
-			}
-		}
+                &:hover {
+                    animation: keyframes-heart 2000ms forwards;
+                }
+            }
+        }
 
-		.menu__description {
-			margin-bottom: 40px;
-		
-			.menu__name {
-				margin: 30px 20px 10px 20px;
-				text-transform: uppercase;
-				@include font-thin;
-			}
+        .menu__description {
+            margin-bottom: 40px;
+        
+            .menu__name {
+                margin: 30px 20px 10px 20px;
+                text-transform: uppercase;
+                @include font-thin;
+            }
 
-			.menu__underline {
-				position: relative;
-				right: -20px;
-				top: -5px;
-				background-color: $octonary-color;
-				height: 3px;
-				width: 40px;
-			}
+            .menu__underline {
+                position: relative;
+                right: -20px;
+                top: -5px;
+                background-color: $octonary-color;
+                height: 3px;
+                width: 40px;
+            }
 
-			.menu__items {
-				display: flex;
+            .menu__items {
+                display: flex;
 
-				@media screen and (max-width: $breakpoint-charlie) {
-					flex-wrap: wrap;
-				}
+                @media screen and (max-width: $breakpoint-charlie) {
+                    flex-wrap: wrap;
+                }
 
-				.menu__item {
-					overflow: hidden;
-					border-radius: 15px;
-					margin: 15px 20px 0 20px;
-					background-color: white;
-					box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
-					width: 100%;
-					height: 70px;
-					animation: menu__items 1000ms forwards;
-					opacity: 0;
-					display: flex;
-					justify-content: space-between;
+                .menu__item {
+                    overflow: hidden;
+                    border-radius: 15px;
+                    margin: 15px 20px 0 20px;
+                    background-color: white;
+                    box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.3);
+                    width: 100%;
+                    height: 70px;
+                    animation: menu__items 1000ms forwards;
+                    opacity: 0;
+                    display: flex;
+                    justify-content: space-between;
 
-					@for $i from 1 through 4 {
-						&--#{$i} {
-							animation-delay: 200ms*$i;
-						}
-					}
+                    @for $i from 1 through 4 {
+                        &--#{$i} {
+                            animation-delay: 200ms*$i;
+                        }
+                    }
 
-					@keyframes menu__items {
-						from {
-							opacity: 0;
-							transform: translate(0, 20px);
-						}
-						90% {
-							opacity: 1;
-						}
-						to {
-							opacity: 1;
-							transform: translate(0, 0);
-						}
-					}
+                    @keyframes menu__items {
+                        from {
+                            opacity: 0;
+                            transform: translate(0, 20px);
+                        }
+                        90% {
+                            opacity: 1;
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translate(0, 0);
+                        }
+                    }
 
-					.menu__static {
-						width: 100%;
-						padding: 15px 10px 15px 10px;
+                    .menu__static {
+                        width: 100%;
+                        padding: 15px 10px 15px 10px;
 
-						.menu__dish {
-							margin-bottom: 5px;
-							font-weight: bold;
-							white-space: nowrap;
-  							overflow: hidden;
-							text-overflow: ellipsis;
-							animation: menu__dish--inactive 400ms ease-out forwards;
-						}
+                        .menu__dish {
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                              overflow: hidden;
+                            text-overflow: ellipsis;
+                            animation: menu__dish--inactive 400ms ease-out forwards;
+                        }
 
-						.menu__subtlety {
-							font-size: 13px;						
-							margin-bottom: 5px;
-							white-space: nowrap;
-  							overflow: hidden;
-							text-overflow: ellipsis;
-							animation: menu__subtlety--inactive 400ms ease-out forwards;
+                        .menu__subtlety {
+                            font-size: 13px;						
+                            margin-bottom: 5px;
+                            white-space: nowrap;
+                              overflow: hidden;
+                            text-overflow: ellipsis;
+                            animation: menu__subtlety--inactive 400ms ease-out forwards;
 
-							.menu__price {
-								position: absolute;
-								right: 10px;
-								font-weight: bold;
-							}
-						}
-					}
+                            .menu__price {
+                                position: absolute;
+                                right: 10px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
 
-					.menu__animated {
-						position: absolute;
-						right: 0;
-						transform-origin: right;
-						background-color: $tertiary-color;
-						width: 60px;
-						text-align: center;
-						line-height: 70px;
-						animation: menu__animated--inactive 400ms ease-out forwards;
+                    .menu__animated {
+                        position: absolute;
+                        right: 0;
+                        transform-origin: right;
+                        background-color: $tertiary-color;
+                        width: 60px;
+                        text-align: center;
+                        line-height: 70px;
+                        animation: menu__animated--inactive 400ms ease-out forwards;
 
-						.fas {
-							color: white;
-						}
-					}
+                        .fas {
+                            color: white;
+                        }
+                    }
 
-					&:hover .menu__animated {
-						animation: menu__animated 400ms ease-out forwards;
+                    &:hover .menu__animated {
+                        animation: menu__animated 400ms ease-out forwards;
 
-						.fas {
-							animation: menu__fas 500ms;
-						}
-					}
+                        .fas {
+                            animation: menu__fas 500ms;
+                        }
+                    }
 
-					&:hover .menu__dish {
-						animation: menu__dish 400ms ease-out forwards;
-					}
+                    &:hover .menu__dish {
+                        animation: menu__dish 400ms ease-out forwards;
+                    }
 
-					&:hover .menu__subtlety {
-						animation: menu__subtlety 400ms ease-out forwards;
+                    &:hover .menu__subtlety {
+                        animation: menu__subtlety 400ms ease-out forwards;
 
-						.menu__price {
-							animation: menu__price 400ms ease-out forwards;
-						}
-					}
+                        .menu__price {
+                            animation: menu__price 400ms ease-out forwards;
+                        }
+                    }
 
-					@keyframes menu__price {
-						from {
-							right: 10px;
-						}
-						to {
-							right: 70px;
-						}
-					}
+                    @keyframes menu__price {
+                        from {
+                            right: 10px;
+                        }
+                        to {
+                            right: 70px;
+                        }
+                    }
 
-					@keyframes menu__dish {
-						from {
-							width: calc(100% - 25px);
-						}
-						to {
-							width: calc(100% - 72px);
-						}
-					}
+                    @keyframes menu__dish {
+                        from {
+                            width: calc(100% - 25px);
+                        }
+                        to {
+                            width: calc(100% - 72px);
+                        }
+                    }
 
-					@keyframes menu__dish--inactive {
-						from {
-							width: calc(100% - 72px);
-						}
-						to {
-							width: calc(100% - 25px);
-						}
-					}
+                    @keyframes menu__dish--inactive {
+                        from {
+                            width: calc(100% - 72px);
+                        }
+                        to {
+                            width: calc(100% - 25px);
+                        }
+                    }
 
-					@keyframes menu__subtlety {
-						from {
-							width: calc(100% - 50px);
-						}
-						to {
-							width: calc(100% - 110px);
-						}
-					}
+                    @keyframes menu__subtlety {
+                        from {
+                            width: calc(100% - 50px);
+                        }
+                        to {
+                            width: calc(100% - 110px);
+                        }
+                    }
 
-					@keyframes menu__subtlety--inactive {
-						from {
-							width: calc(100% - 110px);
-						}
-						to {
-							width: calc(100% - 50px);
-						}
-					}
+                    @keyframes menu__subtlety--inactive {
+                        from {
+                            width: calc(100% - 110px);
+                        }
+                        to {
+                            width: calc(100% - 50px);
+                        }
+                    }
 
-					@keyframes menu__animated--inactive {
-						from {
-							transform: scaleX(1);
-						}
-						50% {
-							transform: scaleX(0);
-						}
-						to {
-							position: absolute;
-							right: 0;
-							transform: scaleX(0);
-						}
-					}
+                    @keyframes menu__animated--inactive {
+                        from {
+                            transform: scaleX(1);
+                        }
+                        50% {
+                            transform: scaleX(0);
+                        }
+                        to {
+                            position: absolute;
+                            right: 0;
+                            transform: scaleX(0);
+                        }
+                    }
 
-					@keyframes menu__animated {
-						from {
-							transform: scaleX(0);
-						}
-						to {
-							transform: scaleX(1);
-						}
-					}
+                    @keyframes menu__animated {
+                        from {
+                            transform: scaleX(0);
+                        }
+                        to {
+                            transform: scaleX(1);
+                        }
+                    }
 
-					@keyframes menu__fas {
-						from {
-							transform: rotate(0);
-						}
-						to {
-							transform: rotate(-360deg);
-						}
-					}
-				}
-			}
-		}
-	}
+                    @keyframes menu__fas {
+                        from {
+                            transform: rotate(0);
+                        }
+                        to {
+                            transform: rotate(-360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
